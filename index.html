@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>3alam El Kotob | عالم الكتب</title>
+<meta name="description" content="كل كتاب.. بداية لحكاية جديدة. أي كتاب بـ 80 جنيه وعروض بتوفّر أكتر. اطلب كتابك من عالم الكتب.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Amiri:wght@400;700&family=Dancing+Script:wght@600;700&family=Aref+Ruqaa:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="#top" class="brand" aria-label="3alam El Kotob">3alam El Kotob</a>
+    <nav class="nav-links" aria-label="التنقل">
+      <a href="#offers">العروض</a>
+      <a href="#categories">الأقسام</a>
+      <a href="#books">الكتب</a>
+      <a href="#how">إزاي تطلب</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="pill-btn" id="themeBtn" aria-label="تغيير الوضع">🌓</button>
+      <button class="pill-btn" id="cartBtn">🛒 <span class="cart-text">السلة</span> <span class="badge" id="cartCount">0</span></button>
+      <button class="pill-btn menu-btn" id="menuBtn" aria-label="فتح القايمة" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="قايمة الموبايل">
+    <div class="mobile-menu-inner">
+      <a href="#offers">العروض</a>
+      <a href="#categories">الأقسام</a>
+      <a href="#books">الكتب</a>
+      <a href="#how">إزاي تطلب</a>
+      <a href="#contact">تواصل معنا</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- 1) الهيرو: شبه الفلاير -->
+  <section class="hero">
+    <div class="container">
+      <div class="flyer">
+        <svg class="open-book-icon" viewBox="0 0 64 40" aria-hidden="true">
+          <path d="M32 8C26 3 15 2 4 4v28c11-2 22-1 28 4 6-5 17-6 28-4V4C49 2 38 3 32 8Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="M32 8v28" stroke="currentColor" stroke-width="2.4"/>
+          <path d="M10 12c6-1 13 0 18 3M10 19c6-1 13 0 18 3M54 12c-6-1-13 0-18 3M54 19c-6-1-13 0-18 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+
+        <h1 class="logo-title" dir="ltr">3alam El Kotob</h1>
+        <div class="logo-ar" lang="ar">عالم الكتب</div>
+        <p class="tagline">كل كتاب.. بداية لحكاية جديدة</p>
+
+        <div class="ribbon">أي كتاب هنا بـ <b data-default-price>80</b> جنيه بس 🫢</div>
+
+        <figure class="scene" aria-hidden="true">
+          <svg viewBox="0 0 460 320" role="img">
+            <ellipse cx="230" cy="300" rx="215" ry="12" fill="#4a3326" opacity=".12"/>
+            <g>
+              <rect x="40" y="250" width="200" height="36" rx="5" fill="#5a3e2b"/>
+              <rect x="52" y="257" width="184" height="22" rx="3" fill="#f1e6d6"/>
+              <path d="M58 264h172M58 271h172" stroke="#d9c3a5" stroke-width="1.5"/>
+
+              <rect x="58" y="212" width="182" height="36" rx="5" fill="#8d6a4f"/>
+              <rect x="68" y="219" width="168" height="22" rx="3" fill="#f6ecdc"/>
+              <path d="M74 226h156M74 233h156" stroke="#d9c3a5" stroke-width="1.5"/>
+
+              <rect x="46" y="174" width="192" height="36" rx="5" fill="#c9a98a"/>
+              <rect x="58" y="181" width="176" height="22" rx="3" fill="#f1e6d6"/>
+              <path d="M64 188h164M64 195h164" stroke="#d9c3a5" stroke-width="1.5"/>
+
+              <rect x="64" y="140" width="168" height="32" rx="5" fill="#3b2a1e"/>
+              <rect x="74" y="146" width="154" height="19" rx="3" fill="#f6ecdc"/>
+              <path d="M80 152h142M80 158h142" stroke="#d9c3a5" stroke-width="1.5"/>
+            </g>
+            <g>
+              <ellipse cx="148" cy="138" rx="42" ry="7" fill="#d9c3a5"/>
+              <path d="M120 100h56v22a28 20 0 0 1-56 0Z" fill="#fbf5ea" stroke="#b8936b" stroke-width="2"/>
+              <path d="M176 106h8a9 9 0 0 1 0 18h-10" fill="none" stroke="#b8936b" stroke-width="2.5"/>
+              <path d="M136 90c-6-8 6-12 0-20M152 90c-6-8 6-12 0-20M166 90c-6-8 6-12 0-20" stroke="#b8936b" stroke-width="2" fill="none" stroke-linecap="round" opacity=".7"/>
+            </g>
+            <g>
+              <path d="M262 286c36-22 74-22 110-10v-48c-36-12-74-12-110 10Z" fill="#fbf5ea" stroke="#b8936b" stroke-width="2"/>
+              <path d="M372 276c36-12 74-12 86 10v-48c-12-22-50-22-86-10Z" fill="#f6ecdc" stroke="#b8936b" stroke-width="2"/>
+              <path d="M276 250c28-14 56-14 84-6M276 262c28-14 56-14 84-6M384 244c28-8 44-8 62 4M384 256c28-8 44-8 62 4" stroke="#d9c3a5" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M372 228v48" stroke="#b8936b" stroke-width="2"/>
+            </g>
+          </svg>
+        </figure>
+
+        <div class="note">
+          <p>اطلب كتابك مباشرة من المكتبة</p>
+          <p>بالتواصل معنا على واتساب</p>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#offers" class="btn">شوف العروض</a>
+          <a href="#books" class="btn ghost">تصفّح الكتب</a>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><strong id="statBooks" data-count="0">0</strong><span>كتاب متاح</span></div>
+        <div class="stat"><strong id="statOffers" data-count="0">0</strong><span>عرض وباقة</span></div>
+        <div class="stat"><strong id="statSeries" data-count="0">0</strong><span>سلسلة كاملة</span></div>
+        <div class="stat"><strong id="statPrice" data-count="0">0</strong><span>جنيه لأي كتاب</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2) العروض -->
+  <section id="offers" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>العروض والباقات</h2>
+        <p>كتب مع بعض بسعر أقل، الحق العرض 📍</p>
+      </div>
+      <div class="offers-grid" id="offersGrid"></div>
+      <div class="more-wrap"><button class="btn ghost" id="moreOffers" hidden>عرض كل العروض</button></div>
+    </div>
+  </section>
+
+  <!-- 3) وصل حديثًا -->
+  <section id="new" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>وصل حديثًا</h2>
+        <p>متوفرة الآن في عالم الكتب بسعر خاص</p>
+      </div>
+      <div class="grid" id="newGrid"></div>
+    </div>
+  </section>
+
+  <!-- 4) الأقسام -->
+  <section id="categories" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>تصفّح بالأقسام</h2>
+        <p>اختار القسم اللي يعجبك</p>
+      </div>
+      <div class="cat-grid" id="catGrid"></div>
+    </div>
+  </section>
+
+  <!-- 5) كل الكتب -->
+  <section id="books" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>كل الكتب</h2>
+        <p>دوّر باسم الكتاب أو الكاتب أو السلسلة</p>
+      </div>
+      <div class="tools">
+        <div class="search">
+          <input type="search" id="search" placeholder="اكتب اسم الكتاب..." aria-label="بحث عن كتاب" autocomplete="off">
+          <span class="si" aria-hidden="true">🔍</span>
+        </div>
+        <div class="filters" id="tabs"></div>
+      </div>
+      <div class="result-meta" id="resultMeta" role="status"></div>
+      <div class="list" id="list"></div>
+      <div class="more-wrap"><button class="btn ghost" id="moreBooks" hidden>عرض المزيد</button></div>
+    </div>
+  </section>
+
+  <!-- 6) إزاي تطلب -->
+  <section id="how" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>إزاي تطلب؟</h2>
+        <p>أربع خطوات بسيطة وطلبك يوصلنا على واتساب</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step-n">1</span>
+          <div class="step-ic" aria-hidden="true">🔎</div>
+          <h3>اختار كتبك</h3>
+          <p>دوّر باسم الكتاب أو تصفّح الأقسام والعروض.</p>
+        </li>
+        <li class="step">
+          <span class="step-n">2</span>
+          <div class="step-ic" aria-hidden="true">🛒</div>
+          <h3>ضيفها للسلة</h3>
+          <p>دوس <b>+</b> جنب الكتاب أو <b>أضف العرض</b>. افتح السلة من فوق وعدّل الكميات وشوف إجمالي طلبك.</p>
+        </li>
+        <li class="step">
+          <span class="step-n">3</span>
+          <div class="step-ic" aria-hidden="true">📝</div>
+          <h3>اكتب بياناتك</h3>
+          <p>دوس <b>كمّل الطلب</b> واكتب اسمك ورقم تليفونك وعنوانك.</p>
+        </li>
+        <li class="step">
+          <span class="step-n">4</span>
+          <div class="step-ic" aria-hidden="true">💬</div>
+          <h3>ابعت على واتساب</h3>
+          <p>هتفتح لك رسالة جاهزة فيها طلبك كله. دوس إرسال وإحنا هنكمّل معاك ونأكد الطلب ونرتّب التوصيل.</p>
+        </li>
+      </ol>
+
+      <div class="how-note">
+        <div>
+          <h3>مش حابب تستخدم السلة؟</h3>
+          <p>ابعتلنا أسماء الكتب اللي عايزها على واتساب وهنكمّل معاك الطلب.</p>
+        </div>
+        <div class="how-actions">
+          <a href="#books" class="btn ghost">ابدأ اختيار كتبك</a>
+          <a href="#" class="btn" id="howWa" target="_blank" rel="noopener">اطلب على واتساب</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7) آراء القرّاء (بتظهر لما تضيف آراء في قسم البيانات في script.js) -->
+  <section id="reviews" class="section" hidden>
+    <div class="container">
+      <div class="section-title"><h2>آراء القرّاء</h2></div>
+      <div class="quotes" id="quotes"></div>
+    </div>
+  </section>
+
+  <!-- 8) التواصل -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-card">
+        <h2>اطلب كتابك الآن</h2>
+        <p class="contact-sub">تواصل معنا وهنوصّلك الكتاب اللي بتدوّر عليه</p>
+        <ul class="contact-list">
+          <li><span aria-hidden="true">📞</span><a href="tel:+200000000000" id="phone1" dir="ltr">0100 000 0000</a></li>
+          <li id="waItem"><span aria-hidden="true">💬</span><a href="#" id="waLink" target="_blank" rel="noopener" dir="ltr">WhatsApp</a></li>
+          <li id="igItem"><span aria-hidden="true">📸</span><a href="#" id="igLink" target="_blank" rel="noopener" dir="ltr">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="brand small" dir="ltr">3alam El Kotob</div>
+    <p>شكرًا لثقتكم في عالم الكتب</p>
+    <small>© <span id="year"></span> جميع الحقوق محفوظة</small>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="تواصل معنا على واتساب">
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M16 4a12 12 0 0 0-10.3 18.1L4 28l6.1-1.6A12 12 0 1 0 16 4Z" fill="#fff"/>
+    <path d="M11.5 11.5c.2-1.2.9-1.8 1.6-1.8l1.3 2.9-1.1 1.2c.9 1.9 2.4 3.2 4.2 4.1l1.2-1.1 2.9 1.3c-.1.8-.7 1.5-1.8 1.7-4.3.5-8.9-3.8-8.3-8.3Z" fill="#128c7e"/>
+  </svg>
+  <span>اطلب على واتساب</span>
+</a>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="سلة المشتريات">
+  <div class="drawer-head">
+    <h3 id="drawerTitle">سلة المشتريات</h3>
+    <button class="pill-btn" id="closeCart" aria-label="إغلاق">✕</button>
+  </div>
+
+  <div class="view" id="viewCart">
+    <div class="items" id="items"></div>
+    <div class="saving" id="saving" hidden><span>وفّرت</span><b id="savingAmount"></b></div>
+    <div class="total"><span>الإجمالي</span><span id="total">0</span></div>
+    <button class="btn block" id="toForm">كمّل الطلب</button>
+  </div>
+
+  <form class="view view-form" id="orderForm" hidden>
+    <div class="field"><label for="fName">الاسم</label><input id="fName" name="name" required autocomplete="name"></div>
+    <div class="field"><label for="fPhone">رقم التليفون</label><input id="fPhone" name="phone" type="tel" inputmode="tel" required pattern="[0-9٠-٩+ ]{10,16}" title="اكتب رقم تليفون صحيح" autocomplete="tel"></div>
+    <div class="field"><label for="fGov">المحافظة</label><input id="fGov" name="governorate" autocomplete="address-level1"></div>
+    <div class="field"><label for="fAddr">العنوان بالتفصيل</label><textarea id="fAddr" name="address" rows="3" required autocomplete="street-address"></textarea></div>
+    <div class="field"><label for="fNotes">ملاحظات (اختياري)</label><input id="fNotes" name="notes"></div>
+    <div class="form-actions">
+      <button type="submit" class="btn block">ابعت الطلب على واتساب</button>
+      <button type="button" class="btn ghost block" id="backToCart">رجوع للسلة</button>
+    </div>
+  </form>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
