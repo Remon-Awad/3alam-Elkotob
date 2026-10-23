@@ -45,17 +45,25 @@
   <section class="hero">
     <div class="container">
       <div class="flyer">
-        <svg class="open-book-icon" viewBox="0 0 64 40" aria-hidden="true">
+        <div class="flyer-text">
+          <svg class="open-book-icon" viewBox="0 0 64 40" aria-hidden="true">
           <path d="M32 8C26 3 15 2 4 4v28c11-2 22-1 28 4 6-5 17-6 28-4V4C49 2 38 3 32 8Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
           <path d="M32 8v28" stroke="currentColor" stroke-width="2.4"/>
           <path d="M10 12c6-1 13 0 18 3M10 19c6-1 13 0 18 3M54 12c-6-1-13 0-18 3M54 19c-6-1-13 0-18 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
         </svg>
 
-        <h1 class="logo-title" dir="ltr">3alam El Kotob</h1>
-        <div class="logo-ar" lang="ar">عالم الكتب</div>
-        <p class="tagline">كل كتاب.. بداية لحكاية جديدة</p>
+          <h1 class="logo-title" dir="ltr">3alam El Kotob</h1>
+          <div class="logo-ar" lang="ar">عالم الكتب</div>
+          <p class="tagline">كل كتاب.. بداية لحكاية جديدة</p>
 
-        <div class="ribbon">أي كتاب هنا بـ <b data-default-price>80</b> جنيه بس 🫢</div>
+          <div class="ribbon">أي كتاب هنا بـ <b data-default-price>80</b> جنيه بس 🫢</div>
+
+          <div class="hero-cta">
+          <a href="#offers" class="btn">شوف العروض</a>
+          <a href="#books" class="btn ghost">تصفّح الكتب</a>
+        </div>
+          <p class="hero-note">اطلب كتابك مباشرة من المكتبة بالتواصل معنا على واتساب</p>
+        </div>
 
         <figure class="scene" aria-hidden="true">
           <svg viewBox="0 0 460 320" role="img">
@@ -91,23 +99,12 @@
             </g>
           </svg>
         </figure>
-
-        <div class="note">
-          <p>اطلب كتابك مباشرة من المكتبة</p>
-          <p>بالتواصل معنا على واتساب</p>
-        </div>
-
-        <div class="hero-cta">
-          <a href="#offers" class="btn">شوف العروض</a>
-          <a href="#books" class="btn ghost">تصفّح الكتب</a>
-        </div>
       </div>
 
       <div class="stats">
         <div class="stat"><strong id="statBooks" data-count="0">0</strong><span>كتاب متاح</span></div>
         <div class="stat"><strong id="statOffers" data-count="0">0</strong><span>عرض وباقة</span></div>
         <div class="stat"><strong id="statSeries" data-count="0">0</strong><span>سلسلة كاملة</span></div>
-        <div class="stat"><strong id="statPrice" data-count="0">0</strong><span>جنيه لأي كتاب</span></div>
       </div>
     </div>
   </section>
@@ -179,7 +176,7 @@
           <span class="step-n">1</span>
           <div class="step-ic" aria-hidden="true">🔎</div>
           <h3>اختار كتبك</h3>
-          <p>دوّر باسم الكتاب أو تصفّح الأقسام والعروض.</p>
+          <p>دوّر باسم الكتاب أو تصفّح الأقسام والعروض. الكتاب العادي بـ <b><span data-default-price>80</span> جنيه</b> والعروض بتوفّر أكتر.</p>
         </li>
         <li class="step">
           <span class="step-n">2</span>
@@ -263,7 +260,7 @@
 
   <div class="view" id="viewCart">
     <div class="items" id="items"></div>
-    <div class="saving" id="saving" hidden><span>وفّرت</span><b id="savingAmount"></b></div>
+    <div class="saving" id="saving" hidden><span>🎉 وفّرت من العروض</span><b id="savingAmount"></b></div>
     <div class="total"><span>الإجمالي</span><span id="total">0</span></div>
     <button class="btn block" id="toForm">كمّل الطلب</button>
   </div>
@@ -280,6 +277,16 @@
     </div>
   </form>
 </aside>
+
+<!-- نافذة تفاصيل الكتاب / العرض (بتتفتح من زرار المشاركة أو من رابط مباشر) -->
+<div class="sheet-wrap" id="sheetWrap" hidden>
+  <div class="sheet-backdrop" id="sheetBackdrop"></div>
+  <div class="sheet" id="sheet" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <button class="pill-btn sheet-close" id="sheetClose" aria-label="إغلاق">✕</button>
+    <div id="sheetBody"></div>
+  </div>
+</div>
+
 <div class="toast" id="toast" role="status"></div>
 
 <script src="script.js"></script>
